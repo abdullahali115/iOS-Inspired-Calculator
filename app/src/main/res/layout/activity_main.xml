@@ -5,10 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical"
     android:background="@color/black"
-    >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,71 +16,218 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:src="@drawable/imenu"
-            android:background="@android:color/transparent"
             android:layout_gravity="bottom"
             android:layout_marginStart="10dp"
-            />
+            android:background="@android:color/transparent"
+            android:src="@drawable/imenu" />
     </LinearLayout>
 
-    <View
+    <LinearLayout
+        android:id="@+id/extraSpace"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.18"/>
+        android:layout_weight="0.2"
+        android:orientation="horizontal">
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
+        android:gravity="end|bottom"
+        android:paddingHorizontal="17dp"
         android:text="1234"
         android:textColor="@color/lightGrey"
-        android:gravity="end|bottom"
-        android:textSize="28sp"
-        android:paddingHorizontal="17dp"
-        />
+        android:textSize="28sp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.13"
+        android:gravity="end|top"
+        android:paddingHorizontal="13dp"
         android:text="9,999"
         android:textColor="@color/white"
-        android:gravity="end|center"
-        android:textSize="55sp"
-        android:paddingHorizontal="13dp"
-        />
-
+        android:textSize="55sp" />
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_marginLeft="6dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="15dp"
         android:layout_weight="0.70"
-        android:layout_marginBottom="10dp"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/sciLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:orientation="horizontal">
+            android:layout_weight="0.0"
+            android:orientation="vertical">
 
-            <Button
-                style="@style/otherButtonVer"
-                android:text="AC"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
 
-            <Button
-                style = "@style/otherButtonVer"
-                android:text="+/-"/>
+                <Button
+                    style="@style/sciButton"
+                    android:text="(" />
 
-            <Button
-                style = "@style/otherButtonVer"
-                android:text="%"/>
+                <Button
+                    style="@style/sciButton"
+                    android:text=")" />
 
-            <Button
-                style = "@style/operatorButtonVer"
-                android:text="÷"/>
+                <Button
+                    style="@style/sciButton"
+                    android:text="mc" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="m+" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="m-" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="mr" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="2ⁿᵈ" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="x²" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="x³" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="xʸ" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="𝑒ˣ" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="10ˣ" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="¹/ₓ" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="²√x" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="³√x" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="ʸ√x" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="ln" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="log₁₀" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="x!" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="sin" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="cos" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="tan" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="𝑒" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="EE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="Rand" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="sinh" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="cosh" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="tanh" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="π" />
+
+                <Button
+                    style="@style/sciButton"
+                    android:text="Rad" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -92,19 +238,43 @@
             android:orientation="horizontal">
 
             <Button
-                style = "@style/numButtonVer"
-                android:text="7"/>
+                style="@style/otherButtonVer"
+                android:text="AC" />
 
             <Button
-                style = "@style/numButtonVer"
-                android:text="8"/>
+                style="@style/otherButtonVer"
+                android:text="+/-" />
 
             <Button
-                style = "@style/numButtonVer"
-                android:text="9"/>
+                style="@style/otherButtonVer"
+                android:text="%" />
 
             <Button
-                style = "@style/operatorButtonVer"
+                style="@style/operatorButtonVer"
+                android:text="÷" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/numButtonVer"
+                android:text="7" />
+
+            <Button
+                style="@style/numButtonVer"
+                android:text="8" />
+
+            <Button
+                style="@style/numButtonVer"
+                android:text="9" />
+
+            <Button
+                style="@style/operatorButtonVer"
                 android:text="×" />
 
         </LinearLayout>
@@ -116,20 +286,20 @@
             android:orientation="horizontal">
 
             <Button
-                style = "@style/numButtonVer"
-                android:text="4"/>
+                style="@style/numButtonVer"
+                android:text="4" />
 
             <Button
-                style = "@style/numButtonVer"
-                android:text="5"/>
+                style="@style/numButtonVer"
+                android:text="5" />
 
             <Button
-                style = "@style/numButtonVer"
-                android:text="6"/>
+                style="@style/numButtonVer"
+                android:text="6" />
 
             <Button
-                style = "@style/operatorButtonVer"
-                android:text="-"/>
+                style="@style/operatorButtonVer"
+                android:text="-" />
 
         </LinearLayout>
 
@@ -140,20 +310,20 @@
             android:orientation="horizontal">
 
             <Button
-                style = "@style/numButtonVer"
-                android:text="1"/>
+                style="@style/numButtonVer"
+                android:text="1" />
 
             <Button
-                style = "@style/numButtonVer"
-                android:text="2"/>
+                style="@style/numButtonVer"
+                android:text="2" />
 
             <Button
-                style = "@style/numButtonVer"
-                android:text="3"/>
+                style="@style/numButtonVer"
+                android:text="3" />
 
             <Button
-                style = "@style/operatorButtonVer"
-                android:text="+"/>
+                style="@style/operatorButtonVer"
+                android:text="+" />
 
         </LinearLayout>
 
@@ -175,24 +345,38 @@
 
             <ImageButton
                 android:id="@+id/menuButton2"
-                android:layout_height="0dp"
                 android:layout_width="0dp"
-                android:visibility="gone"
-                />
+                android:layout_height="0dp"
+                android:visibility="gone" />
 
-            <Button
-                style = "@style/numButtonVer"
-                android:text="0"/>
+            <ImageButton
+                android:id="@+id/menuButton3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone" />
 
             <Button
                 style="@style/numButtonVer"
-                android:text="."/>
+                android:text="0" />
 
             <Button
-                style = "@style/operatorButtonVer"
-                android:text="="/>
+                style="@style/numButtonVer"
+                android:text="." />
+
+            <Button
+                style="@style/operatorButtonVer"
+                android:text="=" />
 
         </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/normalLayoutLand"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        >
 
     </LinearLayout>
 

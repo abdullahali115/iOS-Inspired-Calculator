@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_gravity="center"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="50dp"
             android:background="@android:color/transparent"
             android:src="@drawable/imenu" />
     </LinearLayout>
@@ -25,9 +25,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.1"
+        android:layout_weight="0.09"
         android:gravity="end|bottom"
-        android:paddingHorizontal="27dp"
+        android:paddingHorizontal="50dp"
         android:text="1234"
         android:textColor="@color/lightGrey"
         android:textSize="28sp" />
@@ -35,9 +35,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.15"
-        android:gravity="end|center"
-        android:paddingHorizontal="25dp"
+        android:layout_weight="0.17"
+        android:gravity="end|top"
+        android:paddingHorizontal="48dp"
         android:text="500"
         android:textColor="@color/white"
         android:textSize="45sp" />
@@ -45,17 +45,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="14dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="29dp"
         android:layout_marginBottom="10dp"
         android:layout_weight="0.60">
 
         <!-- Scientific Layout        -->
 
         <LinearLayout
+            android:id="@+id/sciLayout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="0"
             android:orientation="vertical">
 
             <LinearLayout
@@ -65,26 +66,26 @@
                 android:orientation="horizontal">
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="(" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text=")" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="mc" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="m+" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="m-" />
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="mr" />
 
                 <Button
@@ -100,7 +101,7 @@
                     android:text="%" />
 
                 <Button
-                    style="@style/otherButtonLand"
+                    style="@style/operatorButtonLand"
                     android:text="÷" />
 
             </LinearLayout>
@@ -112,26 +113,26 @@
                 android:orientation="horizontal">
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="2ⁿᵈ" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="x²" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="x³" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="xʸ" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="𝑒ˣ" />
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="10ˣ" />
 
                 <Button
@@ -159,26 +160,26 @@
                 android:orientation="horizontal">
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="¹/ₓ" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="²√x" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="³√x" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="ʸ√x" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="ln" />
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="log₁₀" />
 
                 <Button
@@ -206,26 +207,26 @@
                 android:orientation="horizontal">
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="x!" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="sin" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="cos" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="tan" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="𝑒" />
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="EE" />
 
                 <Button
@@ -253,36 +254,42 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/menuButton2"
-                    style="@style/numButtonLand"
+                    android:id="@+id/menuButton3"
+                    style="@style/sciButton"
                     android:layout_height="match_parent"
                     android:layout_marginVertical="4dp"
                     android:background="@drawable/round_button"
-                    android:backgroundTint="@color/darkGrey"
-                    android:src="@drawable/calculator_solid_full"
+                    android:src="@drawable/small_calc_icon"
                     app:tint="@color/white" />
 
+                <ImageButton
+                    android:id="@+id/menuButton"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="sinh" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="cosh" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="tanh" />
 
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="π" />
                 <Button
-                    style="@style/numButtonLand"
+                    style="@style/sciButton"
                     android:text="Rad" />
 
                 <Button
                     style="@style/numButtonLand"
+                    android:textSize="18dp"
                     android:text="Rand" />
 
                 <Button
@@ -304,9 +311,10 @@
 
         <!-- Normal Layout        -->
         <LinearLayout
+            android:id="@+id/normalLayoutLand"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <LinearLayout
@@ -400,7 +408,7 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/menuButton"
+                    android:id="@+id/menuButton2"
                     style="@style/numButtonLand"
                     android:layout_height="match_parent"
                     android:layout_marginVertical="4dp"
@@ -428,7 +436,5 @@
             </LinearLayout>
 
         </LinearLayout>
-
     </LinearLayout>
-
 </LinearLayout>
