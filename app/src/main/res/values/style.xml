@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="buttonStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="numButton" parent="@style/buttonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/darkGrey</item>
+    </style>
+
+    <style name="numButtonVer" parent="@style/numButton">
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <style name="numButtonLand" parent="@style/numButton">
+        <item name="android:padding">1dp</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="otherButton" parent="@style/buttonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/lightGrey</item>
+    </style>
+
+    <style name="otherButtonVer" parent="@style/otherButton">
+        <item name="android:textSize">26sp</item>
+    </style>
+
+    <style name="otherButtonLand" parent="@style/otherButton">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="operatorButton" parent="@style/buttonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/orange</item>
+    </style>
+
+    <style name="operatorButtonVer" parent="@style/operatorButton">
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="operatorButtonLand" parent="@style/operatorButton">
+        <item name="android:textSize">25sp</item>
+        <item name="android:padding">1dp</item>
+    </style>
+
+</resources>
