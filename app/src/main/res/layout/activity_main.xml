@@ -32,27 +32,31 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/previewText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.1"
         android:gravity="end|bottom"
         android:paddingHorizontal="17dp"
-        android:text="1234"
+        android:text=""
         android:textColor="@color/lightGrey"
-        android:textSize="28sp" />
+        android:textSize="28sp"
+        />
 
     <TextView
+        android:id="@+id/mainText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.13"
         android:gravity="end|top"
         android:paddingHorizontal="13dp"
-        android:text="9,999"
+        android:text="0"
         android:textColor="@color/white"
         android:textSize="55sp" />
 
 
     <LinearLayout
+        android:id="@+id/mainLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="12dp"
@@ -75,10 +79,12 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/openBracket"
                     style="@style/sciButton"
                     android:text="(" />
 
                 <Button
+                    android:id="@+id/closeBracket"
                     style="@style/sciButton"
                     android:text=")" />
 
@@ -232,151 +238,152 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/normalLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:orientation="horizontal">
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-            <Button
-                style="@style/otherButtonVer"
-                android:text="AC" />
-
-            <Button
-                style="@style/otherButtonVer"
-                android:text="+/-" />
-
-            <Button
-                style="@style/otherButtonVer"
-                android:text="%" />
-
-            <Button
-                style="@style/operatorButtonVer"
-                android:text="÷" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:orientation="horizontal">
-
-            <Button
-                style="@style/numButtonVer"
-                android:text="7" />
-
-            <Button
-                style="@style/numButtonVer"
-                android:text="8" />
-
-            <Button
-                style="@style/numButtonVer"
-                android:text="9" />
-
-            <Button
-                style="@style/operatorButtonVer"
-                android:text="×" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:orientation="horizontal">
-
-            <Button
-                style="@style/numButtonVer"
-                android:text="4" />
-
-            <Button
-                style="@style/numButtonVer"
-                android:text="5" />
-
-            <Button
-                style="@style/numButtonVer"
-                android:text="6" />
-
-            <Button
-                style="@style/operatorButtonVer"
-                android:text="-" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:orientation="horizontal">
-
-            <Button
-                style="@style/numButtonVer"
-                android:text="1" />
-
-            <Button
-                style="@style/numButtonVer"
-                android:text="2" />
-
-            <Button
-                style="@style/numButtonVer"
-                android:text="3" />
-
-            <Button
-                style="@style/operatorButtonVer"
-                android:text="+" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.2"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/menuButton"
-                style="@style/numButtonVer"
-                android:layout_height="match_parent"
-                android:layout_marginVertical="4dp"
-                android:background="@drawable/round_button"
-                android:backgroundTint="@color/darkGrey"
-                android:src="@drawable/calculator_solid_full"
-                app:tint="@color/white" />
-
-            <ImageButton
-                android:id="@+id/menuButton2"
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:visibility="gone" />
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/menuButton3"
-                android:layout_width="0dp"
+                <Button
+                    android:id="@+id/clear"
+                    style="@style/otherButtonVer"
+                    android:text="AC" />
+
+                <Button
+                    android:id="@+id/signSwitcher"
+                    style="@style/otherButtonVer"
+                    android:text="+/-" />
+
+                <Button
+                    style="@style/otherButtonVer"
+                    android:text="%" />
+
+                <Button
+                    style="@style/operatorButtonVer"
+                    android:text="÷" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:visibility="gone" />
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
 
-            <Button
-                style="@style/numButtonVer"
-                android:text="0" />
+                <Button
+                    style="@style/numButtonVer"
+                    android:text="7" />
 
-            <Button
-                style="@style/numButtonVer"
-                android:text="." />
+                <Button
+                    style="@style/numButtonVer"
+                    android:text="8" />
 
-            <Button
-                style="@style/operatorButtonVer"
-                android:text="=" />
+                <Button
+                    style="@style/numButtonVer"
+                    android:text="9" />
 
+                <Button
+                    style="@style/operatorButtonVer"
+                    android:text="×" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/numButtonVer"
+                    android:text="4" />
+
+                <Button
+                    style="@style/numButtonVer"
+                    android:text="5" />
+
+                <Button
+                    style="@style/numButtonVer"
+                    android:text="6" />
+
+                <Button
+                    style="@style/operatorButtonVer"
+                    android:text="-" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/numButtonVer"
+                    android:text="1" />
+
+                <Button
+                    style="@style/numButtonVer"
+                    android:text="2" />
+
+                <Button
+                    style="@style/numButtonVer"
+                    android:text="3" />
+
+                <Button
+                    style="@style/operatorButtonVer"
+                    android:text="+" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/menuButton"
+                    style="@style/numButtonVer"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="4dp"
+                    android:background="@drawable/round_button"
+                    android:backgroundTint="@color/darkGrey"
+                    android:src="@drawable/calculator_solid_full"
+                    app:tint="@color/white" />
+
+                <ImageButton
+                    android:id="@+id/menuButton2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+
+                <ImageButton
+                    android:id="@+id/menuButton3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone" />
+
+                <Button
+                    style="@style/numButtonVer"
+                    android:text="0" />
+
+                <Button
+                    style="@style/numButtonVer"
+                    android:text="." />
+
+                <Button
+                    style="@style/operatorButtonVer"
+                    android:text="=" />
+
+            </LinearLayout>
         </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/normalLayoutLand"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:visibility="gone"
-        >
 
     </LinearLayout>
 

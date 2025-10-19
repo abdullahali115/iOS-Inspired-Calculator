@@ -23,26 +23,29 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/previewText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.09"
         android:gravity="end|bottom"
         android:paddingHorizontal="50dp"
-        android:text="1234"
+        android:text=""
         android:textColor="@color/lightGrey"
         android:textSize="28sp" />
 
     <TextView
+        android:id="@+id/mainText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.17"
         android:gravity="end|top"
         android:paddingHorizontal="48dp"
-        android:text="500"
+        android:text="0"
         android:textColor="@color/white"
         android:textSize="45sp" />
 
     <LinearLayout
+        android:id="@+id/mainLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginLeft="35dp"
@@ -66,10 +69,12 @@
                 android:orientation="horizontal">
 
                 <Button
+                    android:id="@+id/openBracket"
                     style="@style/sciButton"
                     android:text="(" />
 
                 <Button
+                    android:id="@+id/closeBracket"
                     style="@style/sciButton"
                     android:text=")" />
 
@@ -89,10 +94,12 @@
                     android:text="mr" />
 
                 <Button
+                    android:id="@+id/clear"
                     style="@style/otherButtonLand"
                     android:text="AC" />
 
                 <Button
+                    android:id="@+id/signSwitcher"
                     style="@style/otherButtonLand"
                     android:text="+/-" />
 
@@ -174,7 +181,7 @@
                 <Button
                     style="@style/sciButton"
                     android:text="ʸ√x" />
-
+²
                 <Button
                     style="@style/sciButton"
                     android:text="ln" />
@@ -311,7 +318,7 @@
 
         <!-- Normal Layout        -->
         <LinearLayout
-            android:id="@+id/normalLayoutLand"
+            android:id="@+id/normalLayout"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -364,6 +371,7 @@
                     android:text="6" />
 
                 <Button
+                    android:id="@+id/signSwitcher2"
                     style="@style/otherButtonLand"
                     android:text="+/-" />
 
