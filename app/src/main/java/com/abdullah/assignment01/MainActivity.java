@@ -81,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
                         LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) extraSpace.getLayoutParams();
                         LinearLayout.LayoutParams sciParams = (LinearLayout.LayoutParams) sciLayout.getLayoutParams();
 
-                        Toast.makeText(MainActivity.this, "Basic", LENGTH_SHORT).show();
 
                         ValueAnimator animator = ValueAnimator.ofFloat(0.0f, 0.2f);
                         ValueAnimator animate = ValueAnimator.ofFloat(1.0f, 0.0f);
@@ -105,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
                         LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) extraSpace.getLayoutParams();
                         LinearLayout.LayoutParams sciParams = (LinearLayout.LayoutParams) sciLayout.getLayoutParams();
 
-                        Toast.makeText(MainActivity.this, "Basic", LENGTH_SHORT).show();
 
                         ValueAnimator animator = ValueAnimator.ofFloat(0.2f, 0.0f);
                         ValueAnimator animate = ValueAnimator.ofFloat(0.0f, 1.0f);
@@ -321,7 +319,7 @@ public class MainActivity extends AppCompatActivity {
                             LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) landNormal.getLayoutParams();
                             LinearLayout.LayoutParams sciParams = (LinearLayout.LayoutParams) sciLayout.getLayoutParams();
 
-                            Toast.makeText(MainActivity.this, "Basic", LENGTH_SHORT).show();
+
 
                             ValueAnimator animator = ValueAnimator.ofFloat(1.0f, 0.0f);
                             ValueAnimator animate = ValueAnimator.ofFloat(0.0f, 1.0f);
@@ -344,7 +342,6 @@ public class MainActivity extends AppCompatActivity {
                             LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) landNormal.getLayoutParams();
                             LinearLayout.LayoutParams sciParams = (LinearLayout.LayoutParams) sciLayout.getLayoutParams();
 
-                            Toast.makeText(MainActivity.this, "Basic", LENGTH_SHORT).show();
 
                             ValueAnimator animator = ValueAnimator.ofFloat(0.0f, 1.0f);
                             ValueAnimator animate = ValueAnimator.ofFloat(1.0f, 0.0f);
