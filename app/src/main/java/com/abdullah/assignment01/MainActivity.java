@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.util.ArrayList;
 
 import androidx.activity.EdgeToEdge;
@@ -194,15 +195,13 @@ public class MainActivity extends AppCompatActivity {
                         case "%":
                         case "×":
                         case "÷": {
-                            if (!isInsideTrig() && op.equals("")) {
-                                if (!isOperator(mainText.getText().charAt(mainText.length() - 1))) {
-                                    previewText.setText("");
-                                    mainText.setText(mainText.getText() + text);
-                                } else {
-                                    mainText.setText(mainText.getText().subSequence(0, mainText.length() - 1) + text);
-                                }
-                                op = text;
+                            if (!isOperator(mainText.getText().charAt(mainText.length() - 1))) {
+                                previewText.setText("");
+                                mainText.setText(mainText.getText() + text);
+                            } else {
+                                mainText.setText(mainText.getText().subSequence(0, mainText.length() - 1) + text);
                             }
+                            op = text;
                             break;
                         }
                         case "sin":
@@ -318,7 +317,6 @@ public class MainActivity extends AppCompatActivity {
                         if (id == R.id.basicOption && !isBasic) {
                             LinearLayout.LayoutParams params = (LinearLayout.LayoutParams) landNormal.getLayoutParams();
                             LinearLayout.LayoutParams sciParams = (LinearLayout.LayoutParams) sciLayout.getLayoutParams();
-
 
 
                             ValueAnimator animator = ValueAnimator.ofFloat(1.0f, 0.0f);
